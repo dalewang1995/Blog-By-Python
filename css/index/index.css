@@ -1,0 +1,144 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+footer{
+  padding: 50px 0;
+  background: rgba(192, 192, 192, 0.9);
+}
+.one{
+  padding-top: 60px;
+  height: 655px;
+  width: 100%;
+  background-color:#1abc9c;
+  text-align: center;
+}
+
+.two{
+  background-color:#2489c5;
+
+  width: 100%;
+}
+.three{
+  background-color:#b3b3b3;
+  width: 100%;
+  text-align: center;
+}
+
+.info-message > h1{
+  text-shadow: 2px 1px 2px #000;
+  font-size: 5em;
+  color: white;
+  margin-top: 188px;
+
+}
+.info-divider{
+  border: 1px outset white;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  width:46%;
+}
+.icon-heart{
+  margin-left: -13px;
+  margin-top: 8px;
+  display: inline-block;
+  color: red;
+}
+.myPhoto{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-image: url(2.jpg);
+  background-position: -560px -630px;
+}
+.myInformation li{
+  margin-left: 20px;
+}
+.myInformation p{
+  margin-left: 20px;
+}
+.triangle{
+  border-left: 20px solid #cf4646;
+  border-right:20px solid #f0db4f;
+  border-top: 20px solid #563d7c;
+  border-bottom: 20px solid #4caf50;
+  width: 0;
+  height: 0;
+  background-color: #ccc;
+  display: inline-block;
+}
+.myInformation{
+  margin-top:120px;
+}
+.portfolio-item{
+  width: 260px;
+  height: 260px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color:white;
+  border: 2px outset rgba(255, 255, 255, 0.6);
+}
+.portfolio-item:hover{
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+}
+.portfolio-item >.top-1{
+  width:auto;
+  height: 200px;
+  background-image: url(1.png);
+}
+.portfolio-item >.top-2{
+  width:auto;
+  height: 200px;
+  background-image: url(2.png);
+}
+.portfolio-item >.top-3{
+  width:auto;
+  height: 200px;
+  background-image: url(3.png);
+}
+.portfolio-item >.top-4{
+  width:auto;
+  height: 200px;
+  background-image: url(4.png);
+}
+.portfolio-item .portfolio-caption {
+  max-width:auto;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.8);
+  text-align: center;
+  padding: 5px;
+}
+.portfolio-item .portfolio-caption h4 {
+  color: #fff;
+  text-transform: none;
+  margin: 0;
+}
+
+.portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0;
+}
+.portfolio-hover {
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  width:226px;
+  height:200px;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s,
+}
+.portfolio-hover span{
+  font-size: 120px;
+  margin: 26px auto;
+  color: white;
+
+}
+.portfolio-hover:hover {
+  opacity: 1;
+}
