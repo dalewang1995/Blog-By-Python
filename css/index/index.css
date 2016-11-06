@@ -142,3 +142,6 @@ footer{
 .portfolio-hover:hover {
   opacity: 1;
 }
+.modal-content{
+  text-align: center;
+}

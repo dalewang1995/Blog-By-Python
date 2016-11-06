@@ -11,6 +11,24 @@
   <link rel="stylesheet" href="css/index/index.css">
 </head>
 <body>
+
+  <!-- 模态框 -->
+
+      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+             <img src="weichat.png" alt="weichat">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade bs-example2-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+             <p>邮箱地址 : dalewang1995@gmail.com</p>
+          </div>
+        </div>
+      </div>
   <!-- nav -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -43,8 +61,11 @@
 
           <div class="one" id="one">
             <div class="containter">
+
+
               <div class="row">
                 <div class="col-lg-12">
+
                   <div class="info-message">
                     <h1>Web Designer</h1>
                     <h3>程序员小白的前端之路</h3>
@@ -52,9 +73,9 @@
 
                     <a href="https://github.com/dalewang1995"><button type="button" class="btn btn-primary">GitHub</button></a>
                     <a href="https://freecodecamp.cn/dalewang1995"><button type="button" class="btn btn-success">FreeCodeCamp</button></a>
-                    <button type="button" class="btn btn-info">WeChat</button>
-                    <button type="button" class="btn btn-warning">FaceBook</button>
-                    <button type="button" class="btn btn-danger">Gmail</button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-sm">WeChat</button>
+                    <a href="https://facebook.com"><button type="button" class="btn btn-warning">FaceBook</button></a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example2-modal-sm">Gmail</button>
 
                   </div>
                 </div>
