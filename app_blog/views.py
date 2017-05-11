@@ -6,7 +6,6 @@ from django.http import HttpResponse, JsonResponse
 import json
 from markdown import markdown
 from django.core import serializers
-# from markdown import markdown
 # Create your views here.
 import sys
 
