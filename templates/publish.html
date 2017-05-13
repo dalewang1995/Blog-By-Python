@@ -12,18 +12,48 @@
 
 </head>
 <body>
+
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0);">Dale's&nbsp;Blog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="aboutme.html">关于我</a></li>
+                <li class="active"><a href="publish.html">发文章</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="login-welcome"><a href="#"></a></li>
+                <li class="logout-box" style="display: none"><a href="#">登出</a></li>
+                <li class="login-box"><a href="#"  data-toggle="modal" data-target=".bs-example-modal-sm">登录</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
 <!--登录-->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
 
-        <ul id="myTab" class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">登录</a></li>
-            <li><a href="#ios" data-toggle="tab">注册</a></li>
-            <button type="button" class="close w-login-close" data-dismiss="modal" aria-hidden="true">
-                ×
-            </button>
-        </ul>
+
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">登录</a></li>
+    <li><a href="#ios" data-toggle="tab">注册</a></li>
+    <button type="button" class="close w-login-close" data-dismiss="modal" aria-hidden="true">
+        ×
+    </button>
+</ul>
 <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade in active" id="home">
         <div style="padding:20px;">
@@ -46,7 +76,6 @@
             </form>
         </div>
     </div>
-</div>
 <!--注册-->
     <div class="tab-pane fade" id="ios">
         <div style="padding:20px;">
@@ -72,39 +101,10 @@
     </div>
 </div>
 
-
 </div>
 </div>
 </div>
 
-
-
-<!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Dale's&nbsp;Blog</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="aboutme.html">关于我</a></li>
-                <li class="active"><a href="publish.html">发文章</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="login-welcome"><a href="#"></a></li>
-                <li class="logout-box" style="display: none"><a href="#">登出</a></li>
-                <li class="login-box"><a href="#"  data-toggle="modal" data-target=".bs-example-modal-sm">登录</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
 
 <div class="container">
     <div class="btn-group">
@@ -114,15 +114,15 @@
             <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu" role="menu">
-            <li><a href="javascript:void(0)" class="w-category-one" id="1">前端</a></li>
-            <li><a href="javascript:void(0)" class="w-category-two" id="2">后端</a></li>
-            <li><a href="javascript:void(0)" class="w-category-three" id="3">技巧</a></li>
+            <li><a href="javascript:void(0);" class="w-category-one" id="1">前端</a></li>
+            <li><a href="javascript:void(0);" class="w-category-two" id="2">后端</a></li>
+            <li><a href="javascript:void(0);" class="w-category-three" id="3">技巧</a></li>
             <li class="divider"></li>
-            <li><a href="javascript:void(0)" class="w-category-four" id="4">感悟</a></li>
+            <li><a href="javascript:void(0);" class="w-category-four" id="4">感悟</a></li>
         </ul>
     </div>
 
-    <div class="btn-group"><button class="btn btn-default" id="w-btn-publish">发布</button></div>
+    <div class="btn-group"><a class="btn btn-default" id="w-btn-publish">发布</a></div>
     <div class="w-margin"></div>
 
     <div class="input-group">

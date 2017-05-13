@@ -223,14 +223,15 @@ def index(request):
 def publish(request):
     if request.method == 'POST':
         received_json_data = json.loads(request.body)
+        author_name = received_json_data['author_name']
         author_id = received_json_data['author_id']
         category_str = received_json_data['category_str']
         print received_json_data['category_str']
-
         title = received_json_data['title']
         content = received_json_data['content']
         mark_content = markdown(content)
-        Article_Result = Article.objects.create(category=category_str, title=title, auth_id_id=author_id,
+        Article_Result = Article.objects.create(category=category_str, title=title, auth_name=author_name,
+                                                auth_id_id=author_id,
                                                 content=mark_content)
         return JsonResponse({'status': 1, 'msg': 'OK'})
     elif request.method == 'GET':
