@@ -24,7 +24,7 @@ $(document).ready(function(){
                 check_name.password=password;
                 var check_name_str = JSON.stringify(check_name);  //从一个对象解析出字符串
                 console.log(check_name_str);
-                $.ajax({url:"api/signup",
+                $.ajax({url:"../api/signup",
                         async:true,
                         type:"POST",
                         data :check_name_str,
@@ -53,7 +53,7 @@ $(document).ready(function(){
          user_data.username = getCookie("name");
          user_data.password = getCookie("password");
          var user_data_str = JSON.stringify(user_data);
-         $.ajax({url:"api/logout",
+         $.ajax({url:"../api/logout",
                 async:true,
                 type:"POST",
                 data :user_data_str,
@@ -80,7 +80,7 @@ $(document).ready(function(){
         check_login.username = name;
         check_login.password = password;
         var check_loginstr = JSON.stringify(check_login);  //从一个对象解析出字符串
-        $.ajax({url:"api/login",
+        $.ajax({url:"../api/login",
                 async:true,
                 type:"POST",
                 data :check_loginstr,

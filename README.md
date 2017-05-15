@@ -34,4 +34,9 @@
 登录 /login
 登出 /logout
 
+
+
+<button class="read-cookie-btn">cookies读取</button>
+<button class="del-cookie-btn">cookies删除</button>
+
 ### 未完待续。。。

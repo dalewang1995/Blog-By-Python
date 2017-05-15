@@ -31,5 +31,5 @@ $(document).ready(function(){
 // 文章ID
 function get_article(m) {
     var id_number = m.id;
-    location.href="article/"+id_number;
+    location.href="../article/"+id_number;
 }
