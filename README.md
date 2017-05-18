@@ -15,7 +15,7 @@
 - MySQL
 
 ### 服务器
-- 阿里云ECS（CentsOS）
+- 阿里云ECS（Ubuntu Server 14.04）
 
 
 文章分类：
