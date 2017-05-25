@@ -149,8 +149,6 @@ def has_username_and_password(request, null=None):
     received_json_data = json.loads(request.body)
     username = received_json_data['username']
     password = received_json_data['password']
-    # username = username.encode("utf-8")
-    # username = unicode(username, "utf-8")
     if len(username) == 0 or len(password) == 0:
         return False
     return True, username, password
