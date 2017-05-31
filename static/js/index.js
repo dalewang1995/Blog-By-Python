@@ -18,7 +18,7 @@ $(document).ready(function(){
                                     <div class="col-xs-8 col-xs-offset-2">\
                                     <h3><a href="javascript:void(0)" onclick="get_article(this);"  id="'+article_arr[i]["id"]+'" >'+article_arr[i]["title"]+'</a></h3>\
                                     <p><span class="label label-warning">'+article_arr[i]["category"]+'</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span>&nbsp;<span>'+article_arr[i]["pub_date"]+'</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;<span>'+article_arr[i]["author_name"]+'</span> </p>\
-                                    <p>'+article_arr[i]["content"]+'</p>\
+                                    <p>'+article_arr[i]["content"]+'......</p>\
                                     </div>\
                                     </div>';
 
